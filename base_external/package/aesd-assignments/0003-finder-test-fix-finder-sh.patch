@@ -1,0 +1,13 @@
+diff --git a/finder-app/finder-test.sh b/finder-app/finder-test.sh
+index dff7b29..b629904 100755
+--- a/finder-app/finder-test.sh
++++ b/finder-app/finder-test.sh
+@@ -57,7 +57,7 @@ do
+ 	/bin/writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
+ done
+ 
+-OUTPUTSTRING=$(./finder.sh "$WRITEDIR" "$WRITESTR")
++OUTPUTSTRING=$(/bin/finder.sh "$WRITEDIR" "$WRITESTR")
+ 
+ # remove temporary directories
+ rm -rf /tmp/aeld-data

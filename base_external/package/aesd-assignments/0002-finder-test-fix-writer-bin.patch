@@ -1,0 +1,13 @@
+diff --git a/finder-app/finder-test.sh b/finder-app/finder-test.sh
+index bcd55d8..dff7b29 100755
+--- a/finder-app/finder-test.sh
++++ b/finder-app/finder-test.sh
+@@ -54,7 +54,7 @@ fi
+ 
+ for i in $( seq 1 $NUMFILES)
+ do
+-	./writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
++	/bin/writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
+ done
+ 
+ OUTPUTSTRING=$(./finder.sh "$WRITEDIR" "$WRITESTR")
